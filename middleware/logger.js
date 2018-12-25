@@ -6,7 +6,8 @@ function log(ctx) {
 module.exports = function() {
     return async function(ctx, next) {
         log(ctx)
-            // 调用next函数
+
+        // 调用next函数
         await next()
     }
 }
